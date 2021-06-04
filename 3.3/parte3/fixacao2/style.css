@@ -1,0 +1,27 @@
+div:hover {
+  border: 2px solid gray;
+}
+
+div:first-of-type {
+  background-color:  blue;
+  color: white;
+}
+
+div:last-of-type {
+  background-color: antiquewhite;
+}
+
+div:nth-of-type(2) {
+  background-color: purple;
+  color: white;
+}
+
+div:nth-of-type(3){
+  background-color: red;
+  color: white;
+}
+
+div:nth-of-type(4) {
+  background-color: black;
+  color: white;
+}
