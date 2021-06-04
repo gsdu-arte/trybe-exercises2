@@ -1,0 +1,11 @@
+h1, p {
+  text-align: center;
+}
+
+li:hover{
+  background-color: chocolate;
+}
+
+li:active {
+  color: white;
+}
