@@ -1,0 +1,38 @@
+h1 {
+  color: orange;
+  font-size: 65px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ul {
+  background-color: bisque;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.cor-de-fundo {
+  background-color: aquamarine;
+}
+
+p {
+  font-size: 3em;
+  font-weight: 600;
+  font-style: oblique;
+}
+
+body {
+  font-size: 16px;
+}
+
+#amarelo {
+  color: yellow;
+}
+
+#vermelho {
+  color: red;
+}
+
+#marrom {
+  color: brown;
+}
