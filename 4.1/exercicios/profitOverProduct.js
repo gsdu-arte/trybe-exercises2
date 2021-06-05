@@ -9,6 +9,7 @@ let valorCustoTotal = custo + impostoSobreCusto;
 let lucro = precoVenda - valorCustoTotal;
 if (custo < 0 || precoVenda < 0) {
   console.log('erro');
+} else {
+  let vendeMil = 1000 * lucro;
+  console.log(vendeMil);
 }
-let vendeMil = 1000 * lucro;
-console.log(vendeMil);
