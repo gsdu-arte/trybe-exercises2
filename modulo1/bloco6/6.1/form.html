@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício - Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Formulário</h1>
+  </header>
+  <form action="" method="get">
+    
+    <div>
+      <fieldset id="first-div">
+        <div class="fildset-div">
+          <label for="full-name">Nome:</label>
+          <input type="text" required placeholder="Digite seu nome" maxlength="40" id="full-name" name="name">
+        </div>
+
+        <div class="fildset-div">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Digite seu email" maxlength="50" required name="email">
+        </div>
+        
+        <div class="fildset-div">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" placeholder="Digite seu CPF" maxlength="11" required name="cpf">
+        </div>
+        
+        <div class="fildset-div">
+          <label for="adress">Endereço:</label>
+          <input type="text" id="adress" placeholder="Digite seu endereço" maxlength="200" required name="endereço">
+        </div>
+
+        <div class="fildset-div">
+          <label for="city">Cidade:</label>
+          <input type="text" id="city" placeholder="Digite sua cidade" maxlength="28" required name="cidade">
+        </div>
+
+        <div class="fildset-div">
+          <label for="states">Estado</label>
+          <select name="estados" id="states" required></select>
+        </div>
+        
+        <div class="fildset-div">
+          <input type="radio" name="tipo" id="house-type" checked>
+          <label for="house-type">Casa</label>
+
+          <input type="radio" name="tipo" id="apt-type">
+          <label for="apt-type">Apartamento</label>
+        </div>        
+      </fieldset>
+    </div>
+    
+    <div>
+      <fieldset id="second-div">
+        <div class="fildset-div">
+          <label for="cv">Resumo do Currículo:</label>
+          <textarea name="curriculo" id="cv" maxlength="1000" required>
+
+          </textarea>
+        </div>
+        
+        <div class="fildset-div">
+          <label for="occupation">Cargo:</label>
+          <input type="text" name="cargo" id="occupation" maxlength="40" required>
+        </div>
+
+        <div class="fildset-div">
+          <label for="job-description">Descrição do Cargo:</label>
+          <input type="text" name="descricao" id="job-description" maxlength="500" required>
+        </div>
+
+        <div class="fildset-div">
+          <label for="beginningDate">Data de Início:</label>
+          <input type="date" name="data" id="beginningDate">
+        </div>      
+      </fieldset>
+    </div>
+
+    <div class="buttons" id="button-send">
+      <button type="submit" id="send">Enviar</button>
+    </div>
+  
+    <div class="buttons" id="button-clear">
+      <button type="reset" id="clean">Limpar</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

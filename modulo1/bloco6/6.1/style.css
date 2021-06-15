@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+body h1 {
+  text-align: center;
+}
+
+#first-div {
+  padding: 10px;
+  margin: 10px;  
+}
+
+#second-div {
+  padding: 10px;
+  margin: 10px;
+}
+
+.fildset-div {
+  padding: 5px;
+}
+
+.buttons{
+  display: inline;
+}
+
+#button-send {
+  padding: 10px;
+}
+
+#button-clear {
+  padding: 10px;
+}
