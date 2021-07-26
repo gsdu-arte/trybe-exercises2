@@ -35,3 +35,7 @@ class App extends React.Component {
 }
 
 export default App;
+
+// O que o componente App é em relação a Order? R: Componente pai
+
+// Complete o código acima de forma que os pedidos referentes aos produtos headphone e energyDrink sejam filhos de App .
