@@ -26,6 +26,7 @@ class Form extends Component {
       email: '',
       age: 0,
       feeling: '',
+      attendance: false,
     };
     this.handleChange = this.handleChange.bind(this);
     // this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -34,7 +35,8 @@ class Form extends Component {
   }
 
   handleChange(event) {
-    const { name, value } = event.target
+    const { name } = event.target
+    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value
     this.setState({
       [name]: value,
     });
@@ -100,7 +102,7 @@ class Form extends Component {
           </label>
 
           <label htmlFor="feeling">
-            Como você está se sentindo:
+            Como estou me sentindo:
             <select
               id="feeling"
               name="feeling"
@@ -111,6 +113,15 @@ class Form extends Component {
               <option value="anxious">Anciosa(o)</option>
               <option value="excited">Animada(o)</option>
             </select>
+          </label>
+
+          <label htmlFor="attendance">
+            Irei comparecer:
+            <input 
+              type="checkbox" name="attendance" id="attendance"
+              value={this.state.attendance}
+              onChange={this.handleChange} 
+            />
           </label>
 
         </form>
