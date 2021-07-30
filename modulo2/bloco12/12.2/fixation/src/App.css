@@ -1,7 +1,13 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin: 10px
 }
-h4 {
+
+h1 {
+  text-align: center;
+}
+
+label {
   margin-bottom: 5px;
 }
