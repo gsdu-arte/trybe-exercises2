@@ -6,7 +6,7 @@
 
 // 4-Busque na documentação de React acerca de formulários (primeiro link da seção de Recursos Adicionais!) como se deve adicionar um input para arquivos. Acrescente um ao seu formulário.
 
-// 5-Encapsule alguns dos seus campos num fieldset . Entenda como ele funciona lendo a documentação.
+// 5-Encapsule alguns dos seus campos num fieldset. Entenda como ele funciona lendo a documentação.
 
 // 6-Faça dois de seus campos serem componentes filhos do seu componente de formulário. Garanta que seu estado ainda pertence ao componente pai.
 
@@ -27,35 +27,36 @@ class Form extends Component {
       age: 0,
       feeling: '',
     };
-    this.handleNameChange = this.handleNameChange.bind(this);
-    this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handleAgeChange = this.handleAgeChange.bind(this);
-    this.handleFeelingChange = this.handleFeelingChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    // this.handleEmailChange = this.handleEmailChange.bind(this);
+    // this.handleAgeChange = this.handleAgeChange.bind(this);
+    // this.handleFeelingChange = this.handleFeelingChange.bind(this);
   }
 
-  handleNameChange(event) {
+  handleChange(event) {
+    const { name, value } = event.target
     this.setState({
-      name: event.target.value,
+      [name]: value,
     });
   }
 
-  handleEmailChange(event) {
-    this.setState({
-      email: event.target.value,
-    });
-  }
+  // handleEmailChange(event) {
+  //   this.setState({
+  //     email: event.target.value,
+  //   });
+  // }
 
-  handleAgeChange(event) {
-    this.setState({
-      age: event.target.value,
-    });
-  }
+  // handleAgeChange(event) {
+  //   this.setState({
+  //     age: event.target.value,
+  //   });
+  // }
 
-  handleFeelingChange(event) {
-    this.setState({
-      feeling: event.target.value,
-    });
-  }
+  // handleFeelingChange(event) {
+  //   this.setState({
+  //     feeling: event.target.value,
+  //   });
+  // }
 
   render() {
     
@@ -71,7 +72,7 @@ class Form extends Component {
               id="name"
               name="name"
               type="text"
-              onChange={this.handleNameChange}
+              onChange={this.handleChange}
               value={this.state.name}
             />
           </label>
@@ -82,7 +83,7 @@ class Form extends Component {
               id="email"
               name="email"
               type="email"
-              onChange={this.handleEmailChange}
+              onChange={this.handleChange}
               value={this.state.email}
             />
           </label>
@@ -93,7 +94,7 @@ class Form extends Component {
               id="age"
               name="age"
               type="number"
-              onChange={this.handleAgeChange}
+              onChange={this.handleChange}
               value={this.state.age}
             />
           </label>
@@ -103,7 +104,7 @@ class Form extends Component {
             <select
               id="feeling"
               name="feeling"
-              onChange={this.handleFeelingChange}
+              onChange={this.handleChange}
               value={this.state.feeling}
             >
               <option value="">Selecione</option>
