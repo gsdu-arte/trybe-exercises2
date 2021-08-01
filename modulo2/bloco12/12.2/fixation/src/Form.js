@@ -82,7 +82,7 @@ class Form extends Component {
           />
 
           <fieldset>
-            <legend>Adicione uma foto:</legend>
+            <legend>Adicione uma foto ou arquivo:</legend>
 
             <input type="file" />
           </fieldset>
