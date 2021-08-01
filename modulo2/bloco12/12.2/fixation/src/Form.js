@@ -61,8 +61,7 @@ class Form extends Component {
   // }
 
   render() {
-    
-
+    const { name, email, age, feeling, attendance } = this.state
     return (
       <div>
         <h1>Estados e React - Primeiro Form</h1>
@@ -75,7 +74,7 @@ class Form extends Component {
               name="name"
               type="text"
               onChange={this.handleChange}
-              value={this.state.name}
+              value={name}
             />
           </label>
 
@@ -86,7 +85,7 @@ class Form extends Component {
               name="email"
               type="email"
               onChange={this.handleChange}
-              value={this.state.email}
+              value={email}
             />
           </label>
 
@@ -97,7 +96,7 @@ class Form extends Component {
               name="age"
               type="number"
               onChange={this.handleChange}
-              value={this.state.age}
+              value={age}
             />
           </label>
 
@@ -107,7 +106,7 @@ class Form extends Component {
               id="feeling"
               name="feeling"
               onChange={this.handleChange}
-              value={this.state.feeling}
+              value={feeling}
             >
               <option value="">Selecione</option>
               <option value="anxious">Anciosa(o)</option>
@@ -116,13 +115,15 @@ class Form extends Component {
           </label>
 
           <label htmlFor="attendance">
-            Irei comparecer:
+            Marque se for comparecer:
             <input 
               type="checkbox" name="attendance" id="attendance"
-              value={this.state.attendance}
+              value={attendance}
               onChange={this.handleChange} 
             />
           </label>
+
+          <input type="file" />
 
         </form>
       </div>
