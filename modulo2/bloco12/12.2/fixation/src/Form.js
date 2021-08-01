@@ -18,7 +18,7 @@
 
 import React, { Component } from 'react';
 import PersonalInfo from './PersonalInfo';
-import QuestionsAnswers from './QuestionsAnswers';
+import DataInfo from './DataInfo';
 
 class Form extends Component {
   constructor() {
@@ -75,7 +75,7 @@ class Form extends Component {
             handleChange={ this.handleChange }
           />
           
-          <QuestionsAnswers 
+          <DataInfo
             feelingValue={ feeling }
             attendanceValue={ attendance }
             handleChange={ this.handleChange }
