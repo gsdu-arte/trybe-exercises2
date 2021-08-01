@@ -66,65 +66,75 @@ class Form extends Component {
       <div>
         <h1>Estados e React - Primeiro Form</h1>
         <form className="form">
+          <fieldset>
+            <legend>Informação Pessoal</legend>
 
-          <label htmlFor="name">
-            Nome:
-            <input
-              id="name"
-              name="name"
-              type="text"
-              onChange={this.handleChange}
-              value={name}
-            />
-          </label>
+            <label htmlFor="name">
+              Nome:
+              <input
+                id="name"
+                name="name"
+                type="text"
+                onChange={this.handleChange}
+                value={name}
+              />
+            </label>
 
-          <label htmlFor="email">
-            Email:
-            <input
-              id="email"
-              name="email"
-              type="email"
-              onChange={this.handleChange}
-              value={email}
-            />
-          </label>
+            <label htmlFor="email">
+              Email:
+              <input
+                id="email"
+                name="email"
+                type="email"
+                onChange={this.handleChange}
+                value={email}
+              />
+            </label>
 
-          <label htmlFor="age">
-            Idade:
-            <input
-              id="age"
-              name="age"
-              type="number"
-              onChange={this.handleChange}
-              value={age}
-            />
-          </label>
+            <label htmlFor="age">
+              Idade:
+              <input
+                id="age"
+                name="age"
+                type="number"
+                onChange={this.handleChange}
+                value={age}
+              />
+            </label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Perguntas e Respostas</legend>
 
-          <label htmlFor="feeling">
-            Como estou me sentindo:
-            <select
-              id="feeling"
-              name="feeling"
-              onChange={this.handleChange}
-              value={feeling}
-            >
-              <option value="">Selecione</option>
-              <option value="anxious">Anciosa(o)</option>
-              <option value="excited">Animada(o)</option>
-            </select>
-          </label>
+            <label htmlFor="feeling">
+              Como estou me sentindo:
+              <select
+                id="feeling"
+                name="feeling"
+                onChange={this.handleChange}
+                value={feeling}
+              >
+                <option value="">Selecione</option>
+                <option value="anxious">Anciosa(o)</option>
+                <option value="excited">Animada(o)</option>
+              </select>
+            </label>
 
-          <label htmlFor="attendance">
-            Marque se for comparecer:
-            <input 
-              type="checkbox" name="attendance" id="attendance"
-              value={attendance}
-              onChange={this.handleChange} 
-            />
-          </label>
+            <label htmlFor="attendance">
+              Marque se for comparecer:
+              <input 
+                type="checkbox" name="attendance" id="attendance"
+                value={attendance}
+                onChange={this.handleChange} 
+              />
+            </label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Arquivos</legend>
 
-          <input type="file" />
-
+            <input type="file" />
+          </fieldset>
         </form>
       </div>
     );
